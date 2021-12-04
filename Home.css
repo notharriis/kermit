@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-@media (max-width: 20em){
+@media (max-width: 35em){
     .section{
         z-index: 4;
     /* height: 100vh; */
