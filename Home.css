@@ -32,3 +32,22 @@
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+      transform: rotate(
+90deg);
+    height: 100vw;
+    margin-top: -100vw;
+    display: flex;
+    visibility: visible;
+    object-fit: cover !important;
+    overflow: hidden;
+    }
+  }
