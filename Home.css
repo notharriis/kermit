@@ -1,0 +1,33 @@
+.section{
+    position:absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media (max-width: 20em){
+    .section{
+        z-index: 4;
+    /* height: 100vh; */
+    width: 101vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(
+90deg);
+    height: 100vw;
+    transform-origin: bottom left;
+    margin-top: -100vw;
+    display: flex;
+    visibility: visible;
+    object-fit: cover !important;
+    overflow: hidden;
+        
+
+    }
+}
+
