@@ -30,30 +30,7 @@
         
 
     }
-}
-
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-      position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-      transform: rotate(
-90deg);
-    height: 100vw;
-    margin-top: -100vw;
-    display: flex;
-    visibility: visible;
-    object-fit: cover !important;
-    overflow: hidden;
-    }
-  }
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -62,6 +39,7 @@
 body{
     display: flex;
     justify-content: center;
+    z-index: 5;
     align-items: center;
     height: 100vh;
     background: #050801;
@@ -70,16 +48,16 @@ body{
 }
 a{
     position: relative;
+    z-index: 5;
     display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
+    padding: 18px 18px;
+    margin: 40px 40px;
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
    
 }
 a:hover{
@@ -170,3 +148,24 @@ a span:nth-child(4){
         bottom: 100%;
     }
 }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+      transform: rotate(
+90deg);
+    height: 100vw;
+    margin-top: -100vw;
+    display: flex;
+    visibility: visible;
+    object-fit: cover !important;
+    overflow: hidden;
+    }
+  }
